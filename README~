@@ -1,4 +1,4 @@
-	h4. InfiniteClaims
+	<h4>InfiniteClaims</h4>
 
 	<p>A Bukkit plugin used in tandem with InfinitePlots. You must have both the WorldEdit and WorldGuard jars added to your Eclipse project. If you decide to use this code please include the original Authors listed below.</p>
 
