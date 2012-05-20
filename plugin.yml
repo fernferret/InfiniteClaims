@@ -1,0 +1,38 @@
+name: InfiniteClaims
+main: hskrasek.InfiniteClaims.InfiniteClaims
+author: hskrasek
+description: InfiniteClaims is a plugin designed for the InfinitePlots world generator to manage the plot allocation via WorldGuard. Originally coded by Toffer, rebuilt by Sekonda and hskrasek.
+version: 2.0B
+depend: [InfinitePlots, WorldGuard, WorldEdit]
+commands:
+   iclaims:
+      description: Allows player to manage their plot
+      usage: /iclaims plot,reset,addmember,removemember [player]
+      default: op
+permissions:
+   infiniteclaims.*:
+      description: Gives access to all InfiniteClaims commands
+      children:
+        infiniteclaims.auto: true
+        infiniteclaims.plot: true
+        infiniteclaims.plot.others: true
+        infiniteclaims.plot.addmember: true
+        infiniteclaims.plot.removemember: true
+        infiniteclaims.regen: true
+   infiniteclaims.auto:
+      description: Allow players to automatically receive a plot.
+   infiniteclaims.plot.*:
+      description: Gives access to all InfiniteClaims plot commands.
+      children:
+        infiniteclaims.plot: true
+        infiniteclaims.plot.others: true
+        infiniteclaims.plot.addmember: true
+        infiniteclaims.plot.removemember: true
+   infiniteclaims.plot:
+      description: Allow players to teleport to their plot.
+   infiniteclaims.plot.others:
+      description: Allows players to teleport to other players plots.
+   infiniteclaims.plot.addmember:
+      description: Add players to your plot.
+   infiniteclaims.plot.removemember:
+      description: Remove players from your plot.
